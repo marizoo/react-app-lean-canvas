@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+
+  h1{
+      font-size: 1.8rem;
+      letter-spacing: .8px;
+      font-weight: 600;
+  }
+
+  h2{
+      font-size: 1.2rem;
+      letter-spacing: .8px;
+      font-weight: 300;
+  }
+
+  .app{
+      min-height: 100vh;
+      width: 100vw;
+        display: flex;
+        justify-content: center;
+  }
+  .app-container{
+    width: 88%;
+    margin-bottom: 3rem;
+  }
+
+  .app-title{
+      margin: 1rem 0;
+  }
+
+  .textArea{
+      width: 100%;
+      height: 80%;
+      resize: none;
+      border: 0;
+      background: transparent;
+      font-size: .8rem;
+  }
+  .textArea:focus{
+      outline: none;
+  }
+
+  /* Top ----------  */
+
+  .app-container-top{
+      display: grid;
+      row-gap: 1rem;
+  }
+
+  .A-problem{
+      min-height: 200px;
+      background: #d3d3d3;
+      padding: 1rem;
+  }
+
+  .B1-Solution{
+    min-height: 200px;
+    background: #d3d3d3;
+    padding: 1rem;
+  }
+
+  .B2-keyMetrics{
+    min-height: 200px;
+    background: #d3d3d3;
+    padding: 1rem;
+  }
+
+  .C-uniqueValueProp{
+    min-height: 200px;
+    background: #d3d3d3;
+    padding: 1rem;
+  }
+  .D1-unfairAdvantage{
+    min-height: 200px;
+    background: #d3d3d3;
+    padding: 1rem;
+  }
+  .D2-channels{
+    min-height: 200px;
+    background: #d3d3d3;
+    padding: 1rem;
+  }
+  .E-customerSegments{
+    min-height: 200px;
+    background: #d3d3d3;
+    padding: 1rem;
+  }
+
+  /* Bottom ----------  */
+  .app-container-bottom{
+      margin-top: 1rem;
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .F-costStructure{
+    min-height: 200px;
+    background: #d3d3d3;
+    padding: 1rem;
+  }
+  .G-revenueStreams{
+    min-height: 200px;
+    background: #d3d3d3;
+    padding: 1rem;
+  }
+
+
+  /* Dark Mode -------- */
+  .dark-mode .app{
+    background: #1d1d1d;
+  }
+
+  .dark-mode .app-container{
+
+  }
+
+  .dark-mode h1, 
+  .dark-mode h2 {
+      color: white;
+  }
+
+  /* Media Queries -------- */
