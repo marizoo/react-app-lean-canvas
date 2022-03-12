@@ -1,7 +1,6 @@
 
 ## DESCRIPTION:
 - A Lean Canvas App, made with React.
-- [Youtube Video of the App](https://
 
 ## OUTCOME:
 ### VERSION 1 (branch: main)
@@ -15,7 +14,7 @@
 - styling: CSS with BEM naming convention
 
 ## PROGRESS:
-- 50%?
+- well... 100%???
 - I've lost my vision for this project. hmmmm...
 
 ## How to run
