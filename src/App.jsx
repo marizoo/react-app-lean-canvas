@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles/appStyles.css";
+import { RiDeleteBinLine, RiPencilLine } from "react-icons/ri";
 
 const App = () => {
     // 01. a1. to display datas on the app
@@ -18,7 +19,7 @@ const App = () => {
         revenueStreams: "",
     });
 
-    // 02. a2/ax. to data bind the input
+    // 02. a2/ax. to data bind the input (textArea).
     const handleTextAreaInput = (ev) => {
         ev.preventDefault();
 
@@ -29,6 +30,16 @@ const App = () => {
         newTexts[fieldName] = fieldValue;
 
         setTexts(newTexts);
+    };
+
+    //  02. a3/ax. to clear the form
+    const handleClearForm = (ev, name) => {
+        const fieldName = ev.target.getAttribute("name");
+
+        const clearText = { ...texts };
+        clearText[fieldName] = "";
+
+        setTexts(clearText);
     };
 
     return (
@@ -49,14 +60,10 @@ const App = () => {
                                 placeholder="What problem(s) are you trying to solve..."
                             ></textarea>
                         </div>
-                        <div className="card-footer">
-                            <button className="card-footer-btnEdit">
-                                Edit
-                            </button>
-                            <button className="card-footer-btnDelete">
-                                delete
-                            </button>
-                        </div>
+                        {/* <div className="card-footer">
+                            <RiPencilLine className="card-footer-btnEdit icon" />
+                            <RiDeleteBinLine className="card-footer-btnDelete icon" />
+                        </div> */}
                     </div>
                     <div className="B1-Solution card">
                         <div className="card-datas">
@@ -70,14 +77,10 @@ const App = () => {
                                 placeholder="List the solution(s) to the problem..."
                             ></textarea>
                         </div>
-                        <div className="card-footer">
-                            <button className="card-footer-btnEdit">
-                                Edit
-                            </button>
-                            <button className="card-footer-btnDelete">
-                                delete
-                            </button>
-                        </div>
+                        {/* <div className="card-footer">
+                            <RiPencilLine className="card-footer-btnEdit icon" />
+                            <RiDeleteBinLine className="card-footer-btnDelete icon" />
+                        </div> */}
                     </div>
                     <div className="B2-keyMetrics card">
                         <div className="card-datas">
@@ -91,14 +94,10 @@ const App = () => {
                                 placeholder="What are the key metrics?"
                             ></textarea>
                         </div>
-                        <div className="card-footer">
-                            <button className="card-footer-btnEdit">
-                                Edit
-                            </button>
-                            <button className="card-footer-btnDelete">
-                                delete
-                            </button>
-                        </div>
+                        {/* <div className="card-footer">
+                            <RiPencilLine className="card-footer-btnEdit icon" />
+                            <RiDeleteBinLine className="card-footer-btnDelete icon" />
+                        </div> */}
                     </div>
                     <div className="C-uniqueValueProp card">
                         <div className="card-datas">
@@ -112,14 +111,10 @@ const App = () => {
                                 placeholder="List the unique value proposition..."
                             ></textarea>
                         </div>
-                        <div className="card-footer">
-                            <button className="card-footer-btnEdit">
-                                Edit
-                            </button>
-                            <button className="card-footer-btnDelete">
-                                delete
-                            </button>
-                        </div>
+                        {/* <div className="card-footer">
+                            <RiPencilLine className="card-footer-btnEdit icon" />
+                            <RiDeleteBinLine className="card-footer-btnDelete icon" />
+                        </div> */}
                     </div>
                     <div className="D1-unfairAdvantage card">
                         <div className="card-datas">
@@ -133,14 +128,10 @@ const App = () => {
                                 placeholder="List the unfair advantages..."
                             ></textarea>
                         </div>
-                        <div className="card-footer">
-                            <button className="card-footer-btnEdit">
-                                Edit
-                            </button>
-                            <button className="card-footer-btnDelete">
-                                delete
-                            </button>
-                        </div>
+                        {/* <div className="card-footer">
+                            <RiPencilLine className="card-footer-btnEdit icon" />
+                            <RiDeleteBinLine className="card-footer-btnDelete icon" />
+                        </div> */}
                     </div>
                     <div className="D2-channels card">
                         <div className="card-datas">
@@ -154,14 +145,10 @@ const App = () => {
                                 placeholder="List the Channels..."
                             ></textarea>
                         </div>
-                        <div className="card-footer">
-                            <button className="card-footer-btnEdit">
-                                Edit
-                            </button>
-                            <button className="card-footer-btnDelete">
-                                delete
-                            </button>
-                        </div>
+                        {/* <div className="card-footer">
+                            <RiPencilLine className="card-footer-btnEdit icon" />
+                            <RiDeleteBinLine className="card-footer-btnDelete icon" />
+                        </div> */}
                     </div>
                     <div className="E-customerSegments card">
                         <div className="card-datas">
@@ -175,18 +162,14 @@ const App = () => {
                                 placeholder="Customer Segments..."
                             ></textarea>
                         </div>
-                        <div className="card-footer">
-                            <button className="card-footer-btnEdit">
-                                Edit
-                            </button>
-                            <button className="card-footer-btnDelete">
-                                delete
-                            </button>
-                        </div>
+                        {/* <div className="card-footer">
+                            <RiPencilLine className="card-footer-btnEdit icon" />
+                            <RiDeleteBinLine className="card-footer-btnDelete icon" />
+                        </div> */}
                     </div>
-                </div>
-                {/* bottom ----------- */}
-                <div className="app-container-bottom ">
+                    {/* </div> */}
+                    {/* bottom ----------- */}
+                    {/* <div className="app-container-bottom "> */}
                     <div className="F-costStructure card">
                         <div className="card-datas">
                             <h2>Cost Structure</h2>
@@ -199,14 +182,10 @@ const App = () => {
                                 placeholder="List the cost structure..."
                             ></textarea>
                         </div>
-                        <div className="card-footer">
-                            <button className="card-footer-btnEdit">
-                                Edit
-                            </button>
-                            <button className="card-footer-btnDelete">
-                                delete
-                            </button>
-                        </div>
+                        {/* <div className="card-footer">
+                            <RiPencilLine className="card-footer-btnEdit icon" />
+                            <RiDeleteBinLine className="card-footer-btnDelete icon" />
+                        </div> */}
                     </div>
 
                     <div className="G-revenueStreams card">
@@ -221,14 +200,10 @@ const App = () => {
                                 placeholder="List the revenue streams..."
                             ></textarea>
                         </div>
-                        <div className="card-footer">
-                            <button className="card-footer-btnEdit">
-                                Edit
-                            </button>
-                            <button className="card-footer-btnDelete">
-                                delete
-                            </button>
-                        </div>
+                        {/* <div className="card-footer">
+                            <RiPencilLine className="card-footer-btnEdit icon" />
+                            <RiDeleteBinLine className="card-footer-btnDelete icon" />
+                        </div> */}
                     </div>
                 </div>
             </div>
