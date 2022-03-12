@@ -37,107 +37,198 @@ const App = () => {
                 <h1 className="app-title">Lean Canvas</h1>
                 {/*  Top ---------------- */}
                 <div className="app-container-top">
-                    <div className="A-problem">
-                        <h2>Problem</h2>
-                        <textarea
-                            onChange={handleTextAreaInput}
-                            value={texts.problem}
-                            className="textArea"
-                            name="problem"
-                            id="problem"
-                            placeholder="What problem(s) are you trying to solve..."
-                        ></textarea>
+                    <div className="A-problem card">
+                        <div className="card-datas">
+                            <h2>Problem</h2>
+                            <textarea
+                                onChange={handleTextAreaInput}
+                                value={texts.problem}
+                                className="textArea"
+                                name="problem"
+                                id="problem"
+                                placeholder="What problem(s) are you trying to solve..."
+                            ></textarea>
+                        </div>
+                        <div className="card-footer">
+                            <button className="card-footer-btnEdit">
+                                Edit
+                            </button>
+                            <button className="card-footer-btnDelete">
+                                delete
+                            </button>
+                        </div>
                     </div>
-                    <div className="B1-Solution">
-                        <h2>Solution</h2>
-                        <textarea
-                            onChange={handleTextAreaInput}
-                            value={texts.solution}
-                            className="textArea"
-                            name="solution"
-                            id="solution"
-                            placeholder="List the solution(s) to the problem..."
-                        ></textarea>
+                    <div className="B1-Solution card">
+                        <div className="card-datas">
+                            <h2>Solution</h2>
+                            <textarea
+                                onChange={handleTextAreaInput}
+                                value={texts.solution}
+                                className="textArea"
+                                name="solution"
+                                id="solution"
+                                placeholder="List the solution(s) to the problem..."
+                            ></textarea>
+                        </div>
+                        <div className="card-footer">
+                            <button className="card-footer-btnEdit">
+                                Edit
+                            </button>
+                            <button className="card-footer-btnDelete">
+                                delete
+                            </button>
+                        </div>
                     </div>
-                    <div className="B2-keyMetrics">
-                        <h2>Key Metrics</h2>
-                        <textarea
-                            onChange={handleTextAreaInput}
-                            value={texts.keyMetrics}
-                            className="textArea"
-                            name="keyMetrics"
-                            id="keyMetrics"
-                            placeholder="What are the key metrics?"
-                        ></textarea>
+                    <div className="B2-keyMetrics card">
+                        <div className="card-datas">
+                            <h2>Key Metrics</h2>
+                            <textarea
+                                onChange={handleTextAreaInput}
+                                value={texts.keyMetrics}
+                                className="textArea"
+                                name="keyMetrics"
+                                id="keyMetrics"
+                                placeholder="What are the key metrics?"
+                            ></textarea>
+                        </div>
+                        <div className="card-footer">
+                            <button className="card-footer-btnEdit">
+                                Edit
+                            </button>
+                            <button className="card-footer-btnDelete">
+                                delete
+                            </button>
+                        </div>
                     </div>
-                    <div className="C-uniqueValueProp">
-                        <h2>Unique Value Proposition</h2>
-                        <textarea
-                            onChange={handleTextAreaInput}
-                            value={texts.uniqueValueProposition}
-                            className="textArea"
-                            name="uniqueValueProposition"
-                            id="uniqueValueProposition"
-                            placeholder="List the unique value proposition..."
-                        ></textarea>
+                    <div className="C-uniqueValueProp card">
+                        <div className="card-datas">
+                            <h2>Unique Value Proposition</h2>
+                            <textarea
+                                onChange={handleTextAreaInput}
+                                value={texts.uniqueValueProposition}
+                                className="textArea"
+                                name="uniqueValueProposition"
+                                id="uniqueValueProposition"
+                                placeholder="List the unique value proposition..."
+                            ></textarea>
+                        </div>
+                        <div className="card-footer">
+                            <button className="card-footer-btnEdit">
+                                Edit
+                            </button>
+                            <button className="card-footer-btnDelete">
+                                delete
+                            </button>
+                        </div>
                     </div>
-                    <div className="D1-unfairAdvantage">
-                        <h2>Unfair Advantage</h2>
-                        <textarea
-                            onChange={handleTextAreaInput}
-                            value={texts.unfairAdvantage}
-                            className="textArea"
-                            name="unfairAdvantage"
-                            id="unfairAdvantage"
-                            placeholder="List the unfair advantages..."
-                        ></textarea>
+                    <div className="D1-unfairAdvantage card">
+                        <div className="card-datas">
+                            <h2>Unfair Advantage</h2>
+                            <textarea
+                                onChange={handleTextAreaInput}
+                                value={texts.unfairAdvantage}
+                                className="textArea"
+                                name="unfairAdvantage"
+                                id="unfairAdvantage"
+                                placeholder="List the unfair advantages..."
+                            ></textarea>
+                        </div>
+                        <div className="card-footer">
+                            <button className="card-footer-btnEdit">
+                                Edit
+                            </button>
+                            <button className="card-footer-btnDelete">
+                                delete
+                            </button>
+                        </div>
                     </div>
-                    <div className="D2-channels">
-                        <h2>Channels</h2>
-                        <textarea
-                            onChange={handleTextAreaInput}
-                            value={texts.channels}
-                            className="textArea"
-                            name="channels"
-                            id="channels"
-                            placeholder="List the Channels..."
-                        ></textarea>
+                    <div className="D2-channels card">
+                        <div className="card-datas">
+                            <h2>Channels</h2>
+                            <textarea
+                                onChange={handleTextAreaInput}
+                                value={texts.channels}
+                                className="textArea"
+                                name="channels"
+                                id="channels"
+                                placeholder="List the Channels..."
+                            ></textarea>
+                        </div>
+                        <div className="card-footer">
+                            <button className="card-footer-btnEdit">
+                                Edit
+                            </button>
+                            <button className="card-footer-btnDelete">
+                                delete
+                            </button>
+                        </div>
                     </div>
-                    <div className="E-customerSegments">
-                        <h2>Customer Segments</h2>
-                        <textarea
-                            onChange={handleTextAreaInput}
-                            value={texts.customerSegments}
-                            className="textArea"
-                            name="customerSegments"
-                            id="customerSegments"
-                            placeholder="Customer Segments..."
-                        ></textarea>
+                    <div className="E-customerSegments card">
+                        <div className="card-datas">
+                            <h2>Customer Segments</h2>
+                            <textarea
+                                onChange={handleTextAreaInput}
+                                value={texts.customerSegments}
+                                className="textArea"
+                                name="customerSegments"
+                                id="customerSegments"
+                                placeholder="Customer Segments..."
+                            ></textarea>
+                        </div>
+                        <div className="card-footer">
+                            <button className="card-footer-btnEdit">
+                                Edit
+                            </button>
+                            <button className="card-footer-btnDelete">
+                                delete
+                            </button>
+                        </div>
                     </div>
                 </div>
                 {/* bottom ----------- */}
-                <div className="app-container-bottom">
-                    <div className="F-costStructure">
-                        <h2>Cost Structure</h2>
-                        <textarea
-                            onChange={handleTextAreaInput}
-                            value={texts.costStructure}
-                            className="textArea"
-                            name="costStructure"
-                            id="costStructure"
-                            placeholder="List the cost structure..."
-                        ></textarea>
+                <div className="app-container-bottom ">
+                    <div className="F-costStructure card">
+                        <div className="card-datas">
+                            <h2>Cost Structure</h2>
+                            <textarea
+                                onChange={handleTextAreaInput}
+                                value={texts.costStructure}
+                                className="textArea"
+                                name="costStructure"
+                                id="costStructure"
+                                placeholder="List the cost structure..."
+                            ></textarea>
+                        </div>
+                        <div className="card-footer">
+                            <button className="card-footer-btnEdit">
+                                Edit
+                            </button>
+                            <button className="card-footer-btnDelete">
+                                delete
+                            </button>
+                        </div>
                     </div>
-                    <div className="G-revenueStreams">
-                        <h2>Revenue Streams</h2>
-                        <textarea
-                            onChange={handleTextAreaInput}
-                            value={texts.revenueStreams}
-                            className="textArea"
-                            name="revenueStreams"
-                            id="revenueStreams"
-                            placeholder="List the revenue streams..."
-                        ></textarea>
+
+                    <div className="G-revenueStreams card">
+                        <div className="card-datas">
+                            <h2>Revenue Streams</h2>
+                            <textarea
+                                onChange={handleTextAreaInput}
+                                value={texts.revenueStreams}
+                                className="textArea"
+                                name="revenueStreams"
+                                id="revenueStreams"
+                                placeholder="List the revenue streams..."
+                            ></textarea>
+                        </div>
+                        <div className="card-footer">
+                            <button className="card-footer-btnEdit">
+                                Edit
+                            </button>
+                            <button className="card-footer-btnDelete">
+                                delete
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
